@@ -1,0 +1,14 @@
+.header {
+    margin: 0 auto;
+    padding: 30px 15px 20px;
+    max-width: 1230px;
+    text-align: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.header__logo {
+    color: rgb(143 133 125);
+    font-weight: bold;
+    font-size: 26px;
+    font-family: 'Playfair Display',serif;
+}

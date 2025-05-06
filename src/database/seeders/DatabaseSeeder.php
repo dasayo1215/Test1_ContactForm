@@ -13,6 +13,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        //categoriesテーブルのダミーデータ作成
+        $this->call(CategoriesTableSeeder::class);
+        //contactsテーブルのダミーデータ作成
+        $this->call(ContactsTableSeeder::class);
     }
 }

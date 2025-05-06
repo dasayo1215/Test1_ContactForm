@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(241, 236, 231);
+}
+
+.header {
+    margin: 0;
+    padding: 30px 15px 20px;
+    width: 100%;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    background-color: #fff;
+}
+
+.header__inner {
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo {
+    color: rgb(143 133 125);
+    font-weight: bold;
+    font-size: 26px;
+    font-family: 'Playfair Display',serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__link {
+    background-color: rgb(246, 246, 244);
+    border: 1px solid rgb(139, 125, 115);
+    color: rgb(139, 125, 115);
+    margin-left: auto;
+    margin-right: 10%;
+    text-decoration: none;
+    font-size: 16px;
+    width: 90px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 10px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    text-align: center;
+}
+
+h2 {
+    color: rgb(143 133 125);
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* .error__wrapper {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.form__error {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.form {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid rgb(139, 125, 115);
+    padding: 60px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.form__label--item {
+    color: rgb(143 133 125);
+    font-size: 14px;
+}
+
+.form__input--text-input {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(244, 244, 244);
+    color: rgb(139, 125, 115);
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form__button {
+    margin: 20px auto 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__button-submit {
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 1px;
+    background: rgb(143 133 125);
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}

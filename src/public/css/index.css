@@ -1,0 +1,147 @@
+.contact-form__content {
+    margin: 0 auto;
+    padding: 10px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    text-align: center;
+}
+
+h2 {
+    color: rgb(143 133 125);
+    font-size: 24px;
+    font-family: 'Playfair Display',serif;
+}
+
+.error__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 30%;
+}
+
+.form__error-name {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    width: 45%;
+}
+
+.form__error {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+    width: 100%;
+}
+
+.form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form__group {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form__group-area {
+    display: flex;
+    margin-top: 20px;
+}
+
+.form__group-title {
+    width: 30%;
+}
+
+.form__group-content {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.form__input--text,
+.form__input--textarea {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__label--item,
+.tel {
+    color: rgb(143 133 125);
+    font-size: 14px;
+}
+
+.form__label--required {
+    color: rgb(255, 0, 0);
+    font-size: 14px;
+}
+
+.form__input--text-input,
+.form__input--text-input-name,
+.form__input--text-input-tel,
+.form__input--text-input-select,
+.form__input--text-input-area {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(244, 244, 244);
+    color: rgb(139, 125, 115);
+    width: 100%;
+}
+
+.form__input--text-input-name {
+    width: 45%;
+}
+
+.form__input--text-input-tel {
+    width: 30%;
+}
+
+.form__label--sex {
+    color: rgb(143 133 125);
+    font-size: 14px;
+    padding: 10px 5px;
+}
+
+.form__input--text-input-select {
+    width: 60%;
+}
+
+.form__input--text-radio {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__input--radio {
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    accent-color: rgb(143 133 125);
+}
+
+.form__input--text-input-area {
+    width: 100%;
+    height: 100px;
+}
+
+.form__button {
+    margin: 30px auto 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__button-submit {
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 1px;
+    background: rgb(143 133 125);
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}

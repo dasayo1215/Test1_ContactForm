@@ -1,0 +1,112 @@
+.contact-form__content {
+    margin: 0 auto;
+    padding: 10px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    text-align: center;
+}
+
+h2 {
+    color: rgb(143 133 125);
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+}
+
+.form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form__group {
+    display: flex;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.form__group-area {
+    display: flex;
+    margin-bottom: 40px;
+    border: solid 1px rgb(230, 230, 230);
+}
+
+.form__group-title {
+    width: 30%;
+    box-sizing: border-box;
+    background-color: rgb(187, 169, 154);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.form__group-content {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.form__input--text,
+.form__input--textarea {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form__label--item {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+.form__input--text-input {
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(139, 125, 115);
+    width: 100%;
+}
+
+textarea {
+    height: auto;
+    min-height: 100px;
+    overflow-y: auto;
+}
+
+.form__buttons1 {
+    position: relative;
+
+}
+
+.form__buttons2 {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form__button-submit {
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 1px;
+    background: rgb(143 133 125);
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form__button-fix {
+    width: 90px;
+    height: 30px;
+    font-size: 14px;
+    border: none;
+    text-decoration: underline;
+    color: rgb(143 133 125);
+    background-color: #fff;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(calc(-50% + 100px));
+}

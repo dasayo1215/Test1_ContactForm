@@ -1,0 +1,318 @@
+.header {
+    margin: 0;
+    padding: 30px 15px 20px;
+    width: 100%;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    background-color: #fff;
+}
+
+.header__inner {
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo {
+    color: rgb(143 133 125);
+    font-weight: bold;
+    font-size: 26px;
+    font-family: 'Playfair Display',serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__link-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: 10%;
+    width: 90px;
+    height: 40px;
+}
+
+.header__link {
+    background-color: rgb(246, 246, 244);
+    border: 1px solid rgb(139, 125, 115);
+    color: rgb(139, 125, 115);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.contact-form__content {
+    margin: 0 auto;
+    padding: 10px 15px;
+    max-width: 1230px;
+}
+
+.contact-form__heading {
+    text-align: center;
+}
+
+h2 {
+    color: rgb(143 133 125);
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+}
+
+.buttons-container1,
+.buttons-container2 {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form__input--text,
+.form__input--gender,
+.form__input--category,
+.form__input--date,
+.form__search,
+.reset,
+.export {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 14px;
+    color: rgb(139, 125, 115);
+    background-color: rgb(246, 246, 244);
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 1px;
+}
+
+.form__input--text {
+    width: 30%;
+    padding-left: 10px;
+}
+
+.form__input--gender {
+    width: 8%;
+    padding-left: 10px;
+}
+
+.form__input--category {
+    width: 20%;
+    padding-left: 10px;
+}
+
+.form__input--date {
+    width: 15%;
+    padding-left: 10px;
+}
+
+.form__search {
+    width: 10%;
+}
+
+.form__search-button {
+    border: none;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgb(139, 121, 104);
+    color: #fff;
+}
+
+.reset {
+    text-decoration: none;
+    border: none;
+    justify-content: center;
+    background-color: rgb(217, 198, 181);
+    color: #fff;
+    width: 10%;
+}
+
+.export {
+    text-decoration: none;
+    border: none;
+    justify-content: center;
+    background-color: rgb(237, 234, 230);
+    width: 15%;
+}
+
+.pagination {
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 3px;
+    margin-right: 0;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+svg.w-5.h-5 {
+    width: 30px;
+    height: 30px;
+    color: rgb(139, 125, 115);
+}
+.text-gray-700 {
+    color: rgb(139, 125, 115);
+}
+
+.table {
+    width: 90%;
+    margin: 10px auto;
+    border-left: 1px solid rgb(230, 230, 230);
+    border-right: 1px solid rgb(230, 230, 230);
+}
+
+.table th {
+    background-color: rgb(139, 121, 104);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.table td {
+    color: rgb(143 133 125);
+    font-size: 16px;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.table td:last-child {
+    padding-left: 50px;
+}
+
+.modal__open {
+    background-color: rgb(246, 246, 244);
+    border: 1px solid rgb(139, 125, 115);
+    color: rgb(139, 125, 115);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    padding: 5px 5px;
+    border-radius: 1px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 50px;
+    border-radius: 1px;
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid rgb(139, 125, 115);
+    box-shadow: 3px 3px 3px 0 rgba(139, 125, 115, .5);
+    overflow-x: auto;
+        max-height: 80vh;
+            /* 高さを画面の80%までに制限 */
+            overflow: auto;
+            /* スクロール対応 */
+            display: block;
+}
+
+.modal__table {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    table-layout: auto;
+    /* 固定レイアウトにするとセルが自動で折り返されやすくなります */
+    word-wrap: break-word;
+    /* セル内の長いテキストも折り返す */
+}
+
+.modal__table-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.modal__table-th {
+    background-color: #fff;
+    color: rgb(139, 125, 115);
+    font-weight: bold;
+    width: 28%;
+    text-align: left;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.modal__table-td {
+    background-color: #fff;
+    color: rgb(139, 125, 115);
+    border: none;
+    text-align: left;
+    vertical-align: top;
+    padding: 12px;
+    word-break: break-word;
+    width: 72%;
+}
+
+.modal__delete {
+    display: block;
+    margin: 30px auto 0 auto;
+    border: none;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(187, 57, 11);
+    color: #fff;
+}
+
+.modal__close {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgb(139, 125, 115);
+    /* 枠の調整 */
+    border-radius: 50%;
+    /* 丸みの度合い */
+    background: #fff;
+    /* ボタンの背景色 */
+}
+
+.modal__close::before,
+.modal__close::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    /* 棒の幅（太さ） */
+    height: 10px;
+    /* 棒の高さ */
+    background: rgb(139, 125, 115);
+    /* バツ印の色 */
+    border-radius: 2.5px;
+}
+
+.modal__close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal__close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
