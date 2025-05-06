@@ -25,7 +25,7 @@ README
     - バージョン管理：Git / GitHub
 
 ## ER図
-![Test1](https://github.com/user-attachments/assets/1e4b5087-5b8b-43d2-985a-d2d95c3720f7)
+![Test1](https://github.com/user-attachments/assets/46f289b2-4720-4090-8993-d3501a0336f3)
 
 ## URL
     - 開発環境：http://localhost/
