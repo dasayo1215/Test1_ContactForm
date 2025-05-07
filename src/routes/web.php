@@ -18,7 +18,7 @@ use App\Http\Controllers\AuthController;
 Route::get('/', [ContactController::class, 'index'])->name('index');
 Route::post('/confirm', [ContactController::class, 'confirm']);
 Route::post('/fix',[ContactController::class, 'fix']);
-Route::post('/', [ContactController::class, 'store']);
+Route::post('/thanks', [ContactController::class, 'store']);
 
 Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
 Route::post('/register', [AuthController::class, 'register']);
