@@ -15,11 +15,13 @@ use App\Http\Controllers\AuthController;
 |
 */
 
+// お問い合わせ関係
 Route::get('/', [ContactController::class, 'index'])->name('index');
 Route::post('/confirm', [ContactController::class, 'confirm']);
 Route::post('/fix',[ContactController::class, 'fix']);
 Route::post('/thanks', [ContactController::class, 'store']);
 
+// 管理関係
 Route::get('/register', [AuthController::class, 'showRegister'])->name('register');
 Route::post('/register', [AuthController::class, 'register']);
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');

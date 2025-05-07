@@ -28,6 +28,7 @@ class AuthController extends Controller
             'password' => $data['password']
         ]);
 
+        //ログイン画面へ
         return redirect()->route('login');
     }
 
@@ -44,7 +45,7 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => $data['password'],
         ])) {
-        // ログイン成功時
+            // ログイン成功時
             return redirect()->route('admin');
         }
 
@@ -59,8 +60,8 @@ class AuthController extends Controller
         $categories = Category::all();
 
         $detailContact = null;
-        if ($request->has('detail')) {
-            $detailContact = Contact::with('category')->find($request->detail);
+        if ($request->has('modal_detail')) {
+            $detailContact = Contact::with('category')->find($request->modal_detail);
         }
 
         return view('auth.admin', compact('contacts', 'categories', 'detailContact'));
@@ -77,8 +78,8 @@ class AuthController extends Controller
         $categories = Category::all();
 
         $detailContact = null;
-        if ($request->has('detail')) {
-            $detailContact = Contact::with('category')->find($request->detail);
+        if ($request->has('modal_detail')) {
+            $detailContact = Contact::with('category')->find($request->modal_detail);
         }
 
         return view('auth.admin', compact('contacts', 'categories', 'detailContact'));
@@ -127,18 +128,11 @@ class AuthController extends Controller
         return $response;
     }
 
-    // public function delete ($id) {
-    //     // 該当のContactを取得して削除
-    //     $contact = Contact::findOrFail($id);
-    //     $contact->delete();
-    //     return redirect()->route('admin');
-    // }
-
     public function delete(Request $request, $id) {
-    $contact = Contact::findOrFail($id);
-    $contact->delete();
+        $contact = Contact::findOrFail($id);
+        $contact->delete();
 
-    // 検索条件をクエリパラメータとして引き継いで search にリダイレクト
-    return redirect()->route('search', $request->query());
-}
+        // 検索条件をクエリパラメータとして引き継いで search にリダイレクト
+        return redirect()->route('search', $request->query());
+    }
 }

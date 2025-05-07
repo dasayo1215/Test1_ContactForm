@@ -85,7 +85,7 @@
                         <td>{{ $contact->email }}</td>
                         <td>{{ $contact->category->content }}</td>
                         <td>
-                            <a class="modal__open" href="{{ route('search', ['detail' => $contact->id] + request()->except('detail')) }}">詳細</a>
+                            <a class="modal__open" href="{{ route('search', ['modal_detail' => $contact->id] + request()->except('modal_detail')) }}">詳細</a>
                         </td>
                     </tr>
                 @endforeach
@@ -94,7 +94,7 @@
                 @if($detailContact)
                     <div class="modal" id="modal-{{ $detailContact->id }}">
                         <div class="modal-content">
-                            <a href="{{ route('search', request()->except('detail')) }}" class="modal__close"></a>
+                            <a href="{{ route('search', request()->except('modal_detail')) }}" class="modal__close"></a>
                             <div class="modal__table">
                                 <div class="modal__table-wrapper">
                                     <div class="modal__table-th">お名前</div>
