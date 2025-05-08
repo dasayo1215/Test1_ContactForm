@@ -100,7 +100,7 @@ class AuthController extends Controller
             echo chr(0xEF) . chr(0xBB) . chr(0xBF);
 
             // CSVのヘッダー
-            fputcsv($handle, ['お問い合わせID', '姓', '名', '性別', 'メール', '電話', '住所', '建物名', 'お問い合わせの種類', 'お問い合わせ内容', '登録日']);
+            fputcsv($handle, ['お問い合わせID', '姓', '名', '性別', 'メール', '電話', '住所', '建物名', 'お問い合わせの種類', 'お問い合わせ内容', '登録日', '更新日']);
 
             foreach ($contacts as $contact) {
                 fputcsv($handle, [
@@ -115,6 +115,7 @@ class AuthController extends Controller
                     $contact->category->content,
                     $contact->detail,
                     $contact->created_at->format('Y-m-d H:i:s'),
+                    $contact->updated_at->format('Y-m-d H:i:s'),
                 ]);
             }
 
