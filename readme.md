@@ -4,7 +4,7 @@ README
 
 ## 環境構築
     - Dockerビルド
-        1. git clone リンク：git@github.com:coachtech-material/laravel-docker-template.git
+        1. git clone リンク：git@github.com:dasayo1215/Test1_ContactForm.git
         2. docker-compose up -d --build
     ＊MySQLは、OSによって起動しない場合があるのでそれぞれのPCに合わせてdocker-compose.ymlファイルを編集してください。
 
