@@ -25,37 +25,34 @@
     </header>
 
     <main>
-        <div class="contact-form__content">
-            <div class="contact-form__heading">
+        <div class="content">
+            <div class="content__heading">
                 <h2>Register</h2>
             </div>
 
             <form class="form" action="/register" method="post">
                 @csrf
-
                 <div class="form__group">
-                    <span class="form__label--item">お名前</span>
-                    <input class="form__input--text-input" type="text" name="name" placeholder="例: 山田　太郎" value="{{ old('name') }}" />
+                    <span class="form__label">お名前</span>
+                    <input class="form__input" type="text" name="name" placeholder="例: 山田　太郎" value="{{ old('name') }}" />
                 </div>
                 <div class="form__error">
                     @error('name')
                         {{ $message }}
                     @enderror
                 </div>
-
                 <div class="form__group">
-                    <span class="form__label--item">メールアドレス</span>
-                    <input class="form__input--text-input" type="email" name="email" placeholder="例: test@example.com" value="{{ old('email') }}" />
+                    <span class="form__label">メールアドレス</span>
+                    <input class="form__input" type="email" name="email" placeholder="例: test@example.com" value="{{ old('email') }}" />
                 </div>
                 <div class="form__error">
                     @error('email')
                         {{ $message }}
                     @enderror
                 </div>
-
                 <div class="form__group">
-                    <span class="form__label--item">パスワード</span>
-                    <input class="form__input--text-input" type="password" name="password" placeholder="例: coachtech1106" />
+                    <span class="form__label">パスワード</span>
+                    <input class="form__input" type="password" name="password" placeholder="例: coachtech1106" />
                 </div>
                 <div class="form__error">
                     @error('password')

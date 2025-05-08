@@ -6,8 +6,8 @@
 
 
 @section('content')
-    <div class="contact-form__content">
-        <div class="contact-form__heading">
+    <div class="content">
+        <div class="content__heading">
             <h2>Confirm</h2>
         </div>
         <form class="form" action="/thanks" method="post">

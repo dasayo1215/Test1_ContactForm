@@ -25,15 +25,17 @@
     </header>
 
     <main>
-        <div class="contact-form__content">
-            <div class="contact-form__heading">
+        <div class="content">
+            <div class="content__heading">
                 <h2>Admin</h2>
             </div>
 
             <div class="buttons-container1">
                 <form class="form" action="/admin/search" method="get">
                     @csrf
+                    <!-- 検索欄 -->
                     <input class="form__input--text" type="text" name="keyword" placeholder="名前やメールアドレスを入力してください" value="{{ request('keyword') }}">
+                    <!-- 性別選択 -->
                     <select class="form__input--gender" name="gender">
                         <option value="">性別</option>
                         <option value="4" {{ request('gender') == '4' ? 'selected' : '' }}>全て</option>
@@ -41,6 +43,7 @@
                         <option value="2" {{ request('gender') == '2' ? 'selected' : '' }}>女性</option>
                         <option value="3" {{ request('gender') == '3' ? 'selected' : '' }}>その他</option>
                     </select>
+                    <!-- カテゴリ選択 -->
                     <select class="form__input--category" name="category_id">
                         <option value="" selected>お問い合わせの種類</option>
                         @foreach($categories as $category)
@@ -50,19 +53,21 @@
                             </option>
                         @endforeach
                     </select>
-
+                    <!-- 日付選択 -->
                     <input class="form__input--date" type="date" name="date" value="{{ request('date') }}">
-
+                    <!-- 検索ボタン -->
                     <div class="form__search">
                         <button class="form__search-button" type="submit">検索</button>
                     </div>
-
+                    <!-- リセットボタン -->
                     <a href="{{ route('admin') }}" class="reset">リセット</a>
                 </form>
             </div>
 
             <div class="buttons-container2">
+                <!-- エクスポートボタン -->
                 <a class="export" href="{{ route('export', request()->query()) }}" >エクスポート</a>
+                <!-- ページネーション -->
                 <div class="pagination">
                     {{ $contacts->links() }}
                 </div>
@@ -84,6 +89,7 @@
                         </td>
                         <td>{{ $contact->email }}</td>
                         <td>{{ $contact->category->content }}</td>
+                        <!-- 詳細ボタン（モーダルウィンドウ開く） -->
                         <td>
                             <a class="modal__open" href="{{ route('search', ['modal_detail' => $contact->id] + request()->except('modal_detail')) }}">詳細</a>
                         </td>
@@ -94,7 +100,9 @@
                 @if($detailContact)
                     <div class="modal" id="modal-{{ $detailContact->id }}">
                         <div class="modal-content">
+                            <!-- 閉じるボタン -->
                             <a href="{{ route('search', request()->except('modal_detail')) }}" class="modal__close"></a>
+                            <!-- 詳細の表 -->
                             <div class="modal__table">
                                 <div class="modal__table-wrapper">
                                     <div class="modal__table-th">お名前</div>
@@ -129,6 +137,7 @@
                                     <div class="modal__table-td">{{ $detailContact->detail }}</div>
                                 </div>
                             </div>
+                            <!-- 削除ボタン -->
                             <form method="POST" action="{{ route('delete', ['id' => $detailContact->id] + request()->query()) }}">
                                 @csrf
                                 @method('DELETE')

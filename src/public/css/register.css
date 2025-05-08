@@ -43,13 +43,13 @@ body {
     justify-content: center;
 }
 
-.contact-form__content {
+.content {
     margin: 0 auto;
     padding: 10px 15px;
     max-width: 1230px;
 }
 
-.contact-form__heading {
+.content__heading {
     text-align: center;
 }
 
@@ -58,11 +58,6 @@ h2 {
     font-size: 24px;
     font-family: 'Playfair Display', serif;
 }
-
-/* .error__wrapper {
-    display: flex;
-    justify-content: space-between;
-} */
 
 .form__error {
     color: rgb(255, 0, 0);
@@ -80,12 +75,12 @@ h2 {
     border-radius: 8px;
 }
 
-.form__label--item {
+.form__label {
     color: rgb(143 133 125);
     font-size: 14px;
 }
 
-.form__input--text-input {
+.form__input {
     padding: 10px 20px;
     border: none;
     background-color: rgb(244, 244, 244);

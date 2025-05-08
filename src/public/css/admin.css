@@ -47,13 +47,13 @@
     cursor: pointer;
 }
 
-.contact-form__content {
+.content {
     margin: 0 auto;
     padding: 10px 15px;
     max-width: 1230px;
 }
 
-.contact-form__heading {
+.content__heading {
     text-align: center;
 }
 

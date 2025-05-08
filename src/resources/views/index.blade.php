@@ -5,8 +5,8 @@
 @endsection
 
 @section('content')
-    <div class="contact-form__content">
-        <div class="contact-form__heading">
+    <div class="content">
+        <div class="content__heading">
             <h2>Contact</h2>
         </div>
 
